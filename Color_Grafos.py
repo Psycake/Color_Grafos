@@ -14,8 +14,6 @@ def start_from_node(G, node_count):     # Función para ordenar el diccionario d
     node_list = list(G.keys())          # Crear lista con las llaves
     adjacent_list = list(G.values())    # Crear lista con los valores de cada llave
 
-    node_count = len(node_list)
-
     while node_list.index(start_node) != 0:         # Repetir el ordenamiento hasta que el nodo elegido sea el primer elemento de la lista
 
         buffer = node_list[0]
