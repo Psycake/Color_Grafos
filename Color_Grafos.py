@@ -19,7 +19,7 @@ def start_from_node(G, node_count):     # Función para ordenar el diccionario d
         buffer = node_list[0]
         buffer_a = adjacent_list[0]
 
-        for i in range(node_count):              # Recorrer nodos y valores un lugar a la izquierda, pasando el último al final
+        for i in range(1, node_count):              # Recorrer nodos y valores un lugar a la izquierda, pasando el último al final
             node_list[i-1] = node_list[i]
             adjacent_list[i-1] = adjacent_list[i]
 
